@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Upload Picture</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Beans</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        #upload-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            cursor: pointer;
+            border: none;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload Picture</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="picture" accept="image/*">
-        <input type="submit" value="Upload">
-    </form>
+    <h1>Cool Beans</h1>
+
+    <div id="upload-container">
+        <!-- Hidden file input -->
+        <input type="file" id="fileInput" accept="image/*">
+
+        <!-- Custom-styled button -->
+        <label for="fileInput" class="custom-button">Upload Photo</label>
+    </div>
+
+    <!-- Additional content goes here -->
+
+    <script>
+        // Optional: Add JavaScript to handle file selection if needed
+    </script>
 </body>
 </html>
