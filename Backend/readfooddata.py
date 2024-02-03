@@ -62,7 +62,7 @@ def find_food(food_name, sub_type = None):
     for x in data['sheets'][2]['data']:
         if(x[2]['Name'] == food_name and (sub_type == None or x[3]['Name_subtitle'] == sub_type) ):
             if(sub_type == None and x[3]['Name_subtitle'] != None):
-                #print('Chose subtitle of \"{}\" arbitrarily'.format(x[3]['Name_subtitle']))
+                print('Chose subtitle of \"{}\" arbitrarily'.format(x[3]['Name_subtitle']))
                 #set_reminder(x[2]['name'], get_time(x[])) 
                 #21, 22
                 return;
