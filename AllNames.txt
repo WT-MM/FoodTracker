@@ -1,0 +1,661 @@
+Butter 
+Buttermilk 
+Cheese - hard such as cheddar, swiss, block parmesan 
+Cheese - parmesan; shredded or grated 
+Cheese - shredded; cheddar, mozzarella, etc. 
+Cheese - processed slices 
+Cheese - soft such as brie, bel paese, goat 
+Coffee creamer - liquid refrigerated 
+Cottage cheese 
+Cream cheese 
+Cream - whipping, ultrapasteurized 
+Cream - whipped, sweetened 
+Cream - half and half 
+Cream - heavy 
+Cream - light 
+Dips - sour cream based 
+Egg substitutes - liquid 
+Eggnog - commercial 
+Eggs - in shell 
+Eggs - raw whites, yolks 
+Eggs - hard boiled cooked 
+Egg dishes 
+Kefir - fermented milk 
+Margarine 
+Milk - plain or flavored 
+Pudding 
+Sour cream 
+Whipped cream - aerosol can 
+Whipped topping - aerosol can 
+Whipped topping - tub 
+Yogurt 
+Beef - rib roast, bone-in 
+Beef - rib roast; boneless, rolled 
+Beef - round or rump roast 
+Beef - tenderloin, whole 
+Beef - tenderloin, half 
+Beef - chuck roast, brisket 
+Beef - steaks 
+Beef - stew, cubes 
+Beef - short ribs 
+Beef - ground 
+Lamb - leg, bone-in - small 
+Lamb - leg, bone-in - large 
+Lamb - leg; boneless, rolled 
+Lamb - crown roast 
+Lamb - shoulder roast or shank leg half 
+Lamb - cubes for kabobs 
+Lamb - ground 
+Lamb - chops, ribs, or loin 
+Lamb - leg steaks 
+Lamb - stew meat, pieces 
+Lamb - shanks 
+Lamb - breast, rolled 
+Veal - shoulder roast, boneless 
+Veal - leg rump or round roast, boneless 
+Veal - loin roast, bone-in 
+Veal - ground 
+Pork - loin roast, bone-in 
+Pork - loin roast, boneless 
+Pork - loin chops, bone-in 
+Pork - loin chops, boneless 
+Pork - crown roast - small 
+Pork - crown roast - large 
+Pork - tenderloin 
+Pork - tenderloin medallions or loin cubes 
+Goat - tender whole cuts (legs, ribs, shoulder, loin) 
+Goat - less tender whole cuts (stew meat, riblets, shanks) 
+Pork - ribs 
+Pork - ground 
+Pork - shoulder 
+Pork - loin, cubes 
+Venison - round, rump, loin, or rib roast 
+Variety meats - liver, tongue, chitterlings, etc. 
+Goat - ground 
+Bacon 
+Corned beef - in pouch with pickling juices 
+Ham - canned (“keep refrigerated” label) 
+Ham - fully cooked, bone-in, whole 
+Ham - fully cooked, bone-in, half 
+Ham - fully cooked, slices, half, or spiral cut 
+Ham - fully cooked, arm picnic shoulder, boneless 
+Ham - fully cooked, canned, boneless (refrigerated) 
+Ham - fully cooked, vacuum packed, boneless 
+Ham - fresh, cook-before-eating, bone-in, whole 
+Ham - fresh, cook-before-eating, bone-in, half 
+Ham - fresh, cook-before-eating, shank or butt portion, bone-in 
+Ham - fresh, cook-before-eating, arm picnic shoulder, boneless 
+Ham - fresh, cook-before-eating, shoulder roll (butt), boneless 
+Ham - fresh, uncooked, whole leg, bone-in 
+Ham - fresh, uncooked, whole leg, boneless 
+Ham - fresh, uncooked, half leg, bone-in 
+Ham - country ham (whole or half) 
+Hot dogs 
+Sausage - raw bulk type or patties 
+Sausage - fully cooked smoked links, kielbasa 
+Sausage - hard, dry (pepperoni), sliced 
+Stuffed, raw pork chops 
+Raw kabobs with vegetables 
+Bacon - fully cooked 
+Ham - shelf-stable cans 
+Jerky - commercially dried 
+Jerky - homemade 
+Meat products - canned 
+Retort pouches or boxes 
+Chicken - whole 
+Turkey - whole 
+Ground turkey or chicken 
+Chicken parts - breast halves, bone-in 
+Chicken parts - breast halves, boneless 
+Chicken parts - legs or thighs 
+Turkey parts - breast halves, bone-in 
+Turkey parts - breast halves, boneless 
+Turkey parts - legs or thighs 
+Duckling - domestic or wild, whole 
+Goose - domestic or wild, whole 
+Pheasant - young, whole 
+Quail - whole 
+Capon - whole 
+Cornish Hens - whole 
+Giblets 
+Stuffed, raw chicken breasts 
+Raw kabobs with vegetables 
+Turducken 
+Chicken nuggets, patties 
+Cooked poultry dishes 
+Fried chicken 
+Poultry pieces - covered with gravy or broth 
+Rotisserie chicken 
+Canned chicken 
+Retort pouches or boxes 
+Lean fish - cod, flounder, haddock, halibut, sole, etc. 
+Lean fish - pollock, ocean perch, rockfish, sea trout. 
+Fatty fish - bluefish, catfish, mackerel, mullet, salmon, tuna, etc. 
+Caviar - fresh, in jar 
+Cooked fish - all 
+Surimi seafood 
+Scallops 
+Shrimp, crayfish 
+Squid 
+Shucked clams, mussels, and oysters 
+Crab meat - fresh 
+Crab meat - pasteurized 
+Crab legs - king, dungeness, snow 
+Live clams, mussels, crab, and oysters 
+Fresh whole lobster - live 
+Fresh lobster tails - cooked 
+Fresh clams, mussels, oysters 
+Fresh whole lobster - frozen 
+Cooked shellfish - all 
+Herring - glass packed, in wine sauce 
+Fish - hot smoked, air pack 
+Fish - hot smoked, vacuum pack 
+Fish - cold smoked, air pack 
+Fish - cold smoked, vacuum pack 
+Tofu 
+Miso 
+Soy flour - full-fat 
+Textured soy protein - (TSP) 
+Re-hydrated textured soy protein - (TSP) 
+Leftovers - with meat, fish, poultry, or egg 
+Leftovers - without meat, fish, poultry, or egg (such as cooked vegitables, rice, or potatoes) 
+Leftovers - pizza 
+Commercial brand vacuum-packed dinners - with USDA seal 
+Cooked pasta 
+Cooked rice 
+Fruit, cut 
+Guacamole 
+Hummus - commercial (pasteurized, with preservatives) 
+Hummus - traditional (no preservatives, not pasteurized) 
+Luncheon meat or poultry - store-sliced 
+Main dishes or meals - hot or refrigerated 
+Meats - covered with gravy or broth 
+Olives - from olive bar 
+Pate 
+Luncheon meat or poultry - pre-packaged 
+Soup, stews 
+Casseroles 
+Commercial bread products - including pan breads, flat breads, rolls, and buns 
+Tortillas - flour 
+Commercial cakes and muffins 
+Cheesecake 
+Cookies - soft 
+Cookies - crispy 
+Dairy filled eclairs 
+Doughnuts 
+Fruit cake 
+Pastries, danish 
+Cream pies - banana cream, coconut cream, butterscotch 
+Chiffon pies - chocolate, lemon 
+Fruit pies - apple, peach, blueberry, apricot, cherry, blackberry 
+Pies - mincemeat 
+Pies - pecan 
+Pies - pumpkin 
+Quiche 
+Baking powder 
+Baking soda 
+Biscuit or pancake mix 
+Cake, brownie, bread mixes 
+Chocolate - unsweetened and semi-sweet, solid 
+Cocoa and cocoa mixes 
+Cornmeal - regular, degerminated 
+Cornmeal - stone ground or blue 
+Cornstarch 
+Flour - white 
+Flour - whole wheat 
+Frosting or icing 
+Gelatin - flavored 
+Gelatin - unflavored 
+Oils - olive or vegetable 
+Nut oils 
+Vegetable oil sprays 
+Shortening - solid 
+Tamarind paste 
+Chili powder 
+Seasoning blends 
+Flavored or herb mixes 
+Garlic - chopped, commercial jars 
+Herbs - dried 
+Spice/spices - whole 
+Spice/spices - ground 
+Sugar - brown 
+Sugar - granulated 
+Sugar - confectioners 
+Sugar substitutes 
+Tapiocas 
+Tube cans - of biscuits, rolls, pizza dough, etc. 
+Ready-to-bake pie crust 
+Cookie dough 
+Apples 
+Apricots 
+Avocados 
+Bananas 
+Berries - cherries, goose berries, lychee 
+Berries - blackberries, boysenberries, currant 
+Blueberries 
+Cherimoya 
+Citrus fruit - lemon, lime, orange, grapefruit, tangerines, clementines 
+Coconut - shredded 
+Coconuts - fresh 
+Cranberries 
+Dates 
+Grapes 
+Guava 
+Kiwi fruit 
+Melons 
+Papaya, mango, feijoa, passionfruit, casaha melon 
+Peaches, nectarines, plums, pears, sapote 
+Pineapple 
+Plantains 
+Pomegranate 
+Artichokes, whole 
+Asparagus 
+Bamboo shoots 
+Beans and peas - green, fava, lima, soybean, wax, snow, sugar snap 
+Beets 
+Bok choy 
+Broccoli and broccoli raab (rapini) 
+Brussels sprouts 
+Cabbage 
+Carrots, parsnips 
+Cauliflower 
+Celery 
+Corn on the cob 
+Cucumbers 
+Eggplant 
+Garlic 
+Ginger root 
+Greens 
+Herbs 
+Leeks 
+Lettuce - iceberg, romaine 
+Lettuce - leaf, spinach 
+Mushrooms 
+Okra 
+Onions - yellow, white, red, etc. 
+Onions - spring or green 
+Peppers 
+Potatoes 
+Pumpkins 
+Radishes 
+Rhubarb 
+Rutabagas 
+Squash - summer and zucchini 
+Squash - winter 
+Tamarind 
+Taro 
+Tomatoes 
+Turnips 
+Yuca/cassava 
+Dough - commercial (bread or cookie) 
+Egg substitutes 
+Fish - breaded 
+Fish - raw but headed and gutted 
+Frozen potato products - fries, hashbrowns, tater tots 
+Frozen pretzels 
+Fruits - such as berries, melons 
+Ice cream 
+Ice pops 
+Juice concentrates 
+Lobster tails 
+Pancakes, waffles 
+Sausages - uncooked 
+Sausages - precooked 
+Sherbet, sorbet 
+Shrimp, shellfish 
+Soy crumbles and hot dogs 
+Soy meat substitutes 
+Tempeh 
+Frozen entrees - prepared meals 
+Vegetables 
+Fresh pasta 
+Beans - dried 
+Lentils - dried 
+Pasta - dry, without eggs 
+Dry egg noodles 
+Peas - dried split 
+Rice - white or wild 
+Rice - brown 
+Barbecue sauce - bottled 
+Chutney 
+Cream sauces, milk solids 
+Dry gravy mixes 
+Gravy - jars and cans 
+Honey 
+Horseradish - in jar 
+Jams, jellies, and preserves 
+Ketchup, cocktail, or chili sauce 
+Marinades 
+Mayonnaise - commercial 
+Mustard 
+Olives - black and green 
+Pickles 
+Pesto - jarred 
+Salad dressings - commercial, bottled 
+Salsa - picante and taco sauces 
+Sauce mixes - nondairy (spaghetti, taco, etc.) 
+Spaghetti sauce - in jars 
+Soy sauce or teriyaki sauce 
+Vinegar 
+Worcestershire sauce 
+Jars or pouches 
+Fruit 
+Vegetables 
+Dinners 
+Cereal, dry mixes 
+Formula - prepared 
+Liquid concentrate or ready-to-feed formula 
+Applesauce - commercial 
+Bacon bits - imitation 
+Canned goods - low acid (such as meat, poultry, fish, gravy, stew, soups, beans, carrots, corn, pasta, peas, potatoes, spinach) 
+Canned goods - high acid (such as juices, fruit, pickles, sauerkraut, tomato soup, and foods in vinegar-based sauce) 
+Cereal - ready-to-eat 
+Cereal - cook before eating (oatmeal, etc.) 
+Chocolate syrup 
+Crackers 
+Graham cracker/animal cracker 
+Fruits, dried - raisins, apricots, mangoes, cranberries, etc. 
+Gummy (fruit) snacks 
+Marshmallows 
+Marshmallow crème 
+Milk - canned evaporated or condensed 
+Molasses 
+Mushrooms - dried 
+Nuts - jars or cans 
+Peanut butter - commercial 
+Pectin 
+Popcorn - dry kernels in jar 
+Popcorn - commercially popped in bags 
+Popcorn - microwave packets 
+Potato chips 
+Potatoes - instant 
+Pretzels 
+Pudding mixes 
+Soup mixes - dry bouillon 
+Sun dried tomatoes - jar 
+Syrup 
+Toaster pastries 
+Coffee - whole beans 
+Coffee - home ground, non-vacuum 
+Coffee - instant 
+Diet powder mixes and drink mixes 
+Fruit Juice in cartons, fruit drinks, punch 
+Juice, boxes 
+Nectar - papaya, mango, guava, or guavabana 
+Soda - carbonated cola drinks, mixers, diet sodas; bottles or cans 
+Soy or rice beverage 
+Tea - bags 
+Tea - instant 
+Tea - loose 
+Water - commercially bottled 
+Kumquats 
+Bagged greens - leaf, spinach, lettuce, etc. 
+Tahini 
+Egg salad 
+Potato salad 
+Seafood salads - (tuna salad, shrimp salad, salmon salad, mixed seafood salad, etc.) 
+Chicken salad 
+Ham salad 
+Pasta salad 
+Soy milk 
+Yams/sweet potatoes 
+Kale 
+Quinoa - uncooked 
+Quinoa - cooked 
+Almond milk 
+Rice milk 
+Coconut milk 
+Coffee creamer - powdered 
+Turkey bacon 
+Fruit cocktail - canned  
+Black bean sauce 
+Oyster sauce 
+Hoisin sauce 
+Pork roll 
+Almonds  - shell 
+Almonds  - no shell 
+Cashews - no shell 
+Macadamias - no shell 
+Peanuts - shell 
+Peanuts - no shell 
+Pecans - shell 
+Pecans - no shell 
+Pistachios - shell or no shell 
+Walnuts - shell or no shell 
+Lime juice 
+Lemon juice 
+Bagel - fresh baked 
+Bagel  - commercially frozen 
+Muffin - homemade - including bran, blueberry, banana, corn, chocolate chip 
+Muffin - commercially packaged 
+Muffin - mix, dry, commercially packaged 
+Coconut oil 
+Orange juice - commercially packaged carton 
+Orange juice - commercially frozen concentrate 
+Orange juice - freshly squeezed 
+Roasted red peppers - jar 
+Whole wheat flour 
+Whole wheat bread - homemade 
+Whole wheat bread - commercially baked & pre-sliced 
+Red wine 
+White wine 
+Dry stuffing mix - commercially packaged 
+Powdered milk 
+Almond butter 
+Cashew butter 
+Salt - table, plain, or iodized 
+Black pepper - ground, dried, commercially bottled or purchased in bulk 
+Black pepper - cracked, dried, commercially bottled or purchased in bulk 
+Cajun seasoning blend  - ground, dried, commercially bottled or purchased in bulk 
+Cinnamon - ground, dried, commercially bottled or purchased in bulk 
+Cumin - ground, dried, commercially bottled or purchased in bulk, opened or unopened 
+Garlic powder - dried, commercially bottled or purchased in bulk 
+Onion powder  - dried, commercially bottled or purchased in bulk 
+Nutmeg - ground, dried, commercially bottled or purchased in bulk 
+Nacho cheese  - store bought 
+Star fruit 
+Prickly pear  
+Pitaya/dragon fruit 
+Strawberries 
+Raspberries 
+Cherries 
+Broth - homemade 
+Beef broth/stock/consommé  - commercially produced 
+Chicken broth/stock/consommé  - commercially produced 
+Vegetable stock/broth  - commercially produced 
+Peanut butter - commercially produced, containing hydrogenated fat or other stabilizers 
+Peanut butter - natural 
+Ricotta 
+Baby carrots 
+Jicama - fresh 
+Kimchi 
+Kohlrabi 
+Watermelon 
+Cantaloupe 
+Honeydew 
+Peanuts  - boiled, shelled 
+Refried beans 
+Relish 
+Tomato paste 
+Tapenade 
+Flaxseed - whole seed 
+Flaxseed - ground 
+Lemongrass 
+Cilantro 
+Mint 
+Basil - dried 
+Basil - fresh 
+Oregano 
+Rosemary 
+Chives 
+Thyme 
+Turkey  - pre-packaged, luncheon/deli meat 
+Ham - pre-packaged, luncheon/deli meat 
+Salami  - pre-packaged, luncheon/deli meat 
+Chicken - pre-packaged, luncheon/deli meat 
+Canadian bacon - whole 
+Canadian bacon - sliced 
+Canola oil 
+Almond oil 
+Sunflower oil 
+Grapeseed oil 
+Duck fat 
+Bacon grease 
+Frying oil - re-used 
+Almond extract 
+Cinnamon extract 
+Lemon extract 
+Pure vanilla extract 
+Butter flavor 
+Coconut flavor 
+"Genuine" Maple syrup - unopened, glass 
+"Genuine" Maple syrup - unopened, plastic 
+Lemon juice - fresh squeezed 
+Apple juice - fresh squeezed 
+Carrot juice - fresh squeezed 
+Hard liquors 
+Cream liquors - unopened 
+Coffee - commercial ground, non-vacuum 
+Macaroons - french 
+Milk - lactose-free 
+String Cheese 
+Vegan Cheddar Cheese 
+Quark - fresh cheese 
+Zucchini - fresh, whole 
+Hot peppers 
+Bean sprouts 
+Swiss chard 
+Puff pastry 
+Biscuits - refrigerated 
+Tortillas - corn 
+Pie crust - refrigerated 
+Granola 
+Pork rinds 
+Apple cider vinegar 
+Nutrition supplement drinks - canned 
+Hot sauce 
+Thai red curry paste 
+Yeast - packaged 
+Applesauce - homemade 
+Pate - meat  
+Pate - poultry 
+Cranberry sauce - canned 
+Cranberry sauce - homemade 
+Vegetable juice - shelf-stable 
+Vegetable juice - commercial, sold refrigerated 
+Vegetable juice - homemade 
+Marinated vegetables - in oil 
+Pizza - frozen 
+Salsa - fresh 
+Chia seeds 
+Bread - homemade 
+Amaranth - whole grain 
+Amaranth - flour, meal 
+Barley - whole grain 
+Barley - flour, meal 
+Buckwheat - whole grain 
+Buckwheat - flour, meal 
+Farro - whole grain 
+Farro - flour, meal 
+Millet - whole grain 
+Millet - flour, meal 
+Oats - whole grain 
+Oats - flour, meal 
+Rye - whole grain 
+Rye - flour, meal 
+Sorghum - whole grain 
+Sorghum - flour, meal 
+Spelt - whole grain 
+Spelt - flour, meal 
+Teff - whole grain 
+Teff - flour, meal 
+Rabbit - whole, fresh 
+Spaghetti squash - whole 
+Spaghetti squash - cut 
+Garam masala 
+Tomato sauce - spaghetti, pizza 
+Cherry tomatoes 
+Coconut cream - canned 
+Coconut milk - canned 
+Coleslaw - homemade, prepared 
+Pumpkin seeds - raw, no shell 
+Pumpkin seeds - raw, in-shell 
+Pumpkin seeds - roasted, no-shell 
+Pumpkin seeds - roasted, in-shell 
+Sunflower seeds - raw, unsalted, no shell 
+Sunflower seeds - roasted, no shell 
+Sunflower seeds - roasted, salted, in shell 
+Parsley - fresh 
+Sesame oil 
+Sesame seeds 
+Capers - in jar 
+Chocolate hazlenut spread 
+Roasted nuts (peanuts, cashews, almonds) 
+Tuna - packet 
+Tuna - canned 
+Seafood - canned 
+Pimento cheese - packaged 
+Bison - whole 
+Bison - ground 
+Salad dressing - creamy 
+Salad dressing - vinaigrette,homemade 
+Salad dressing - vinaigrette 
+Salad dressing - dry,packaged 
+Grits - boxed 
+Cheese Curds - fresh, unaged 
+Vegetable soup - homemade 
+Chorizo - fresh 
+Chorizo - smoked and processed, uncooked 
+Chorizo - smoked and processed, cooked 
+Beets - pickled 
+Cinnamon rolls - unbaked, tube 
+Cinnamon rolls - baked 
+Cooking wine 
+Bulgur 
+Bratwurst - fresh 
+Bratwurst - smoked and processed 
+Edamame - fresh 
+Edamame - frozen 
+Edamame - salted, dry roasted, out of pod 
+Breadcrumbs - commercial 
+Milk  - shelf-stable 
+Salsa - homemade, fresh 
+Salsa - homemade, canned 
+Tomato Sauce - homemade, canned 
+Barbecue Sauce - homemade, canned 
+Ghee 
+Corn syrup 
+Nutrition supplement drinks - bottled 
+Instant breakfast drinks - bottled 
+Pine nuts 
+Coconut flour 
+Pecans - chopped 
+Polenta - shelf-stable 
+Polenta - frozen 
+Cereal or granola bars 
+Milk  - ultra-pasteurized 
+Coconut water 
+Celery root 
+Apple cider - fresh 
+Yuzu juice 
+Yuzu - fruit, fresh 
+Pastrami 
+Kugel - commercial 
+Kugel - homemade 
+Avocado Oil 
+Balsamic vinegar 
+Aioli - homemade 
+Salad dressing - homemade 
+Base - beef, vegetable 
+Anchovies - canned 
+Radicchio 
+Prosciutto 
+Ham  - uncured, fresh, cooked 
+Ham  - uncured, fresh, uncooked 
+Arugula 
+Mung bean - sprouts 
+Mung bean - dry, food-grade bags 
+Mung bean - dry, vacuum-sealed 
+Croutons 
+Bacon - uncured 
+Mustard - dried, ground 
