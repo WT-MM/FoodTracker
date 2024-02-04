@@ -1,4 +1,4 @@
-# FoodTracker
+# 🌱EcoBeans
 App to track food expiration dates by taking a picture. 
 
 Presentation: https://docs.google.com/presentation/d/1aQrKUXM7gxb4y79Yjc5KHeZKvZEk4ZI1zrmCQrkM0pk/edit?usp=sharing
