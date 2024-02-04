@@ -4,6 +4,7 @@ from email.mime.multipart import MIMEMultipart
 import schedule
 import time
 import datetime
+import asyncio
 
 def days_from(spec_date):
     yr, month, day = spec_date.split("-")
@@ -11,9 +12,9 @@ def days_from(spec_date):
     time_delta = exp_date - datetime.date.today()
     return time_delta.days * 24 * 60 * 60
 
-def send_email(subject, food, to_email, date):
-    time.sleep(45)
+async def send_email(subject, food, to_email, date):
     # Create the MIME object
+    await asyncio.sleep(10)
     smtp_server = "smtp.gmail.com"
     smtp_port = 465
     smtp_username = "devfest2024@gmail.com"
