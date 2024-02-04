@@ -17,7 +17,7 @@ def dashboard():
         data = json.load(file)
         #user_data = data[user]
     #return render_template('home.html', foodData=user_data)
-    return render_template('home.html', foodData=[{'name': "cow", 'date':"12-23-23"}])
+    return render_template('home.html', foodData=[])#foodData=[{'name': "cow", 'date':"12-23-23"}])
 
 @app.route('/upload', methods=['POST'])
 def upload():
