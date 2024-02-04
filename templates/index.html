@@ -42,6 +42,13 @@
             font-size: 1.2em;
             margin-top: 10px;
         }
+
+        .processing-notification {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #3498db;
+        }
     </style>
 </head>
 <body>
@@ -53,12 +60,41 @@
 
         <!-- Custom-styled button -->
         <label for="fileInput" class="custom-button">Upload Photo</label>
+
+        <!-- Processing notification -->
+        <p id="processingNotification" class="processing-notification">Processing...</p>
     </div>
 
     <!-- Additional content goes here -->
 
     <script>
-        // Optional: Add JavaScript to handle file selection if needed
+        // Your file upload logic here
+        const fileInput = document.getElementById('fileInput');
+        const processingNotification = document.getElementById('processingNotification');
+
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+
+            processingNotification.style.display = 'block';
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the server
+                console.log(data);
+                processingNotification.style.display = 'none';
+            })
+            .catch(error => {
+                // Handle any errors
+                console.error(error);
+                processingNotification.style.display = 'none';
+            });
+        });
     </script>
 </body>
 </html>

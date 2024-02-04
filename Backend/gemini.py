@@ -18,4 +18,4 @@ def name_foods(image):
     response.resolve()
     print(response.text)
 
-name_foods('Images/fridge.png')
+#name_foods('Images/fridge.png')
