@@ -39,8 +39,8 @@ def upload():
         
         #foods = {"Apple" : "12-23-23"}
         for food in foods:
-            asyncio.run(emailscript.send_email("EcoBean Expiration Alert", food['name'], user, food['date'])
-        return jsonify({'message': 'File uploaded successfully', 'foodData': foods}))
+            asyncio.run(emailscript.send_email("EcoBean Expiration Alert", food['name'], user, food['date']))
+        return jsonify({'message': 'File uploaded successfully', 'foodData': foods})
     
 
 @app.route('/sign-in', methods=['POST'])
