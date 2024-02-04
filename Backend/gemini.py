@@ -17,5 +17,3 @@ def name_foods(image):
     response = model.generate_content(["List all of the foods in this image and their shelf life formatted as a python dictionary where the keys are the food names and the keys are the minimum shelf lives in days", img], stream=True)
     response.resolve()
     print(response.text)
-
-#name_foods('Images/fridge.png')
