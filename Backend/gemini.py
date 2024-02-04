@@ -23,7 +23,7 @@ def name_foods(image):
     response = model.generate_content(['''Return all of the foods in this image and their associated expiration date.
                                        Put the dates in yyyy-mm-dd format.
                                        Assume the current day is February 4, 2024.
-                                       Format the entire answer as [{name: 'food', date: 'date'}, {name: 'food', date: 'date'}''', img], stream=True)
+                                       Format the entire answer as [{"name": 'food', "date": 'date'}, {"name": 'food', "date": 'date'}''', img], stream=True)
     response.resolve()
     mydict = json.loads(response.text)
     return mydict
