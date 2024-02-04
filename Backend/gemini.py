@@ -34,6 +34,6 @@ def get_recipe(foods):
     foodString = ', '.join(foods)
     response = modelT.generate_content(f'''Return possible recipes from the following foods: {foodString}"]
                                           Do not give the ingredients, just the names of the recipes.
-                                          Format the entire answer as recipe1, recipe2, recipe3''', stream=True)
+                                          Format the entire answer as 'recipe1, recipe2, recipe3' without any enumeration''', stream=True)
     response.resolve()
     return response.text.split(", ")
