@@ -167,7 +167,7 @@
             console.log(data.foodData);
             itemLists = document.getElementById('itemList');
             itemLists.innerHTML = '';
-            data.foodData.sort((a, b) => new Date(a.expiration) - new Date(b.expiration));
+            data.foodData.sort((a, b) => new Date(a.date) - new Date(b.date));
             data.foodData.forEach(item => addItem(item.name, item.date));
             
           })
@@ -196,7 +196,7 @@
     // Now you can use foodData in your JavaScript code
     // For example, you can iterate over the list and log each item
     console.log(foodData);
-    foodData.sort((a, b) => new Date(a.expiration) - new Date(b.expiration));
+    foodData.sort((a, b) => new Date(a.date) - new Date(b.date));
     foodData.forEach(item => addItem(item.name, item.date));
 
     function removeItem(item) {
