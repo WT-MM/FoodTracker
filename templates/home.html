@@ -132,6 +132,7 @@
   <div class="dashboard">
     <h1>🌱 EcoBeans Dashboard</h1>
 
+
     <input type="file" accept="image/*" id="imageUpload" onchange="handleImageUpload(event)">
 
     <script>
@@ -168,7 +169,7 @@
           .catch(error => console.error('Error:', error));
       }
     </script>
-    
+
 <label for="imageUpload" class="upload-btn">Upload Image</label>
 
     <div id="imagePreview"></div>
@@ -178,28 +179,6 @@
     <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</div>
   </div>
   <script>
-    function previewImage(event) {
-      const fileInput = event.target;
-      const imagePreview = document.getElementById('imagePreview');
-
-      while (imagePreview.firstChild) {
-        imagePreview.removeChild(imagePreview.firstChild);
-      }
-
-      if (fileInput.files && fileInput.files[0]) {
-        const reader = new FileReader();
-
-        reader.onload = function (e) {
-          const image = document.createElement('img');
-          image.src = e.target.result;
-          image.style.maxWidth = '100%';
-          imagePreview.appendChild(image);
-        };
-
-        reader.readAsDataURL(fileInput.files[0]);
-      }
-    }
-
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
       document.querySelector('.dashboard').classList.toggle('dark-mode-container');
