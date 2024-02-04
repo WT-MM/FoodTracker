@@ -58,7 +58,7 @@ def login():
 
 @app.route('/create-account', methods=['GET'])
 def create_account_page():
-    return render_template('create-account.html')
+    return render_template('username2.html')
 
 @app.route('/create-account', methods=['POST'])
 def create_account():
