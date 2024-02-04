@@ -167,6 +167,7 @@
             console.log(data.foodData);
             itemLists = document.getElementById('itemList');
             itemLists.innerHTML = '';
+            
             data.foodData.sort((a, b) => new Date(a.date) - new Date(b.date));
             data.foodData.forEach(item => addItem(item.name, item.date));
             
@@ -203,6 +204,30 @@
       item.remove();
     }
 
+    function getRecipe(){
+      var itemList = document.getElementById('itemList');
+      var items = itemList.getElementsByTagName('li');
+      var recipe = [];
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        var name = item.getElementsByTagName('span')[0].textContent;
+        recipe.push(name);
+      }
+      console.log(recipe);
+
+      var formData = new FormData();
+      formData.append('foods', JSON.stringify(recipe));
+
+      fetch('/get-recipe', {
+        method: 'POST',
+        body: formData
+      }).then(response => response.json())
+          .then(data => {
+            console.log(data.recipes);
+          })
+          .catch(error => console.error('Error:', error));
+
+    }
     
 
     function calculateDateColor(date) {

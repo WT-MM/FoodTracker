@@ -60,6 +60,15 @@ def login():
 def create_account_page():
     return render_template('username2.html')
 
+@app.route('/get-recipe', methods=['POST'])
+def get_recipe():
+    if request.method == 'POST':
+        foods = request.form['foods']
+        print(foods)
+        recipes = gemini.get_recipe(foods)
+        print(recipes)
+        return jsonify({'message': 'Recipes found', 'recipes': recipes})
+
 @app.route('/create-account', methods=['POST'])
 def create_account():
     global user
