@@ -164,7 +164,12 @@
           .then(response => response.json())
           .then(data => {
             // Handle the response from the backend
-            console.log(data);
+            console.log(data.foodData);
+            itemLists = document.getElementById('itemList');
+            itemLists.innerHTML = '';
+            data.foodData.sort((a, b) => new Date(a.expiration) - new Date(b.expiration));
+            data.foodData.forEach(item => addItem(item.name, item.date));
+            
           })
           .catch(error => console.error('Error:', error));
       }
@@ -216,18 +221,18 @@
       }
     }
 
-    // Sample items
-    const sampleItems = [
-      { name: 'Apple', date: '2024-02-05' },
-      { name: 'Banana', date: '1754-02-10' },
-      { name: 'Orange', date: '2024-02-28' },
-    ];
+    // // Sample items 
+    // const sampleItems = [
+    //   { name: 'Apple', date: '2024-02-05' },
+    //   { name: 'Banana', date: '1754-02-10' },
+    //   { name: 'Orange', date: '2024-02-28' },
+    // ];
 
-    // Sort items by date (ascending)
-    sampleItems.sort((a, b) => new Date(a.date) - new Date(b.date));
+    // // Sort items by date (ascending)
+    // sampleItems.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-    // Add sample items to the list
-    sampleItems.forEach(item => addItem(item.name, item.date));
+    // // Add sample items to the list
+    // sampleItems.forEach(item => addItem(item.name, item.date));
 
     function addItem(name, date) {
       const itemList = document.getElementById('itemList');

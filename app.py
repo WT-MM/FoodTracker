@@ -25,12 +25,13 @@ def upload():
         file = request.files['file']
         file.save('uploads/' + file.filename)
         foods = gemini.name_foods('uploads/' + file.filename)
+        print(foods)
         retData = {}
-        for food in foods:
-            retData[food] = newReadData.get_min_fridge_expiration_time_in_days(food)
+        #for food in foods:
+        #    retData[food] = newReadData.get_min_fridge_expiration_time_in_days(food)
         
-        foods = {"Apple" : "12-23-23"}
-        return jsonify({'message': 'File uploaded successfully', 'foodData': [{'name': name, 'date': retData[name]} for name in retData.keys()]})
+        #foods = {"Apple" : "12-23-23"}
+        return jsonify({'message': 'File uploaded successfully', 'foodData': foods})
     
 
 @app.route('/sign-in', methods=['POST'])
