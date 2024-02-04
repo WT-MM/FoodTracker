@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Beans - Create Account</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: background-color 0.3s;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+            max-width: 400px; /* Adjusted max-width for better mobile responsiveness */
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db; /* Blue color for "Cool Beans" */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #3498db; /* Blue color for labels */
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            color: #555; /* Adjusted color for better readability */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cool Beans - Create Account</h1>
+    <form id="createAccountForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Create Account">
+    </form>
+    <p>Already have an account? <a href="/">Sign In</a></p>
+</div>
+
+<script>
+    document.getElementById("createAccountForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        const formData = new FormData();
+        formData.append('username', username);
+        formData.append('password', password);
+
+        fetch('/create-account', {
+            method: 'POST',
+            body: formData
+        }).then(function(response) {
+            return response.json();
+        }).then(function(data) {
+            if (data.success) {
+                alert("Account created successfully!");
+                window.location.href = "/dashboard";
+            } else {
+                alert("Account creation failed: " + data.error);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
