@@ -1,5 +1,6 @@
 from flask import Flask, render_template, flash, request, redirect, jsonify
 from Backend import gemini, newReadData
+import json
 
 
 app =  Flask(__name__)
@@ -7,6 +8,10 @@ app =  Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('home.html')
 
 @app.route('/upload', methods=['POST'])
 def upload():
@@ -20,6 +25,53 @@ def upload():
         
         return jsonify({'message': 'File uploaded successfully', 'foodData': retData})
     
+
+@app.route('/sign-in', methods=['POST'])
+def login():
+    if request.method == 'POST':
+        # Get the account information from the request
+        username = request.form['username']
+        password = request.form['password']
+
+        print(username, password)
+
+        # Read the account information from the JSON file
+        with open('accounts.json', 'r') as file:
+            accounts = file.readlines()
+
+        # Check if the account information is correct
+        for account in accounts:
+            account = json.loads(account)
+            if account['username'] == username and account['password'] == password:
+                return jsonify({'message': 'Login successful', 'continue': True})
+
+        return jsonify({'message': 'Login failed', 'continue': False})
+
+@app.route('/create-account', methods=['GET'])
+def create_account_page():
+    return render_template('create-account.html')
+
+@app.route('/create-account', methods=['POST'])
+def create_account():
+    if request.method == 'POST':
+        # Get the account information from the request
+        username = request.form['username']
+        password = request.form['password']
+        
+
+        # Create a dictionary with the account information
+        account = {
+            'username': username,
+            'password': password
+        }
+
+         # Write the account information to a JSON file
+        with open('accounts.json', 'a') as file:
+            json.dump(account, file)
+            file.write('\n')
+
+        return jsonify({'message': 'Account created successfully', "success": True})
+
 
 
 if __name__ == '__main__':
