@@ -132,7 +132,42 @@
   <div class="dashboard">
     <h1>🌱 EcoBeans Dashboard</h1>
 
-    <input type="file" accept="image/*" id="imageUpload" onchange="previewImage(event)">
+    <input type="file" accept="image/*" id="imageUpload" onchange="handleImageUpload(event)">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const imageInput = document.getElementById('imageUpload');
+        imageInput.addEventListener('change', handleImageSelection);
+      });
+    
+      function handleImageSelection(event) {
+        const selectedImage = event.target.files[0];
+        // Additional handling of the selected image if needed
+      }
+    
+      function handleImageUpload(event) {
+        const selectedImage = event.target.files[0];
+    
+        if (!selectedImage) {
+          alert('Please select an image before uploading.');
+          return;
+        }
+    
+        const formData = new FormData();
+        formData.append('image', selectedImage);
+    
+        fetch('/backend/upload', {
+          method: 'POST',
+          body: formData,
+        })
+          .then(response => response.json())
+          .then(data => {
+            // Handle the response from the backend
+            console.log(data);
+          })
+          .catch(error => console.error('Error:', error));
+      }
+    </script>
     
 <label for="imageUpload" class="upload-btn">Upload Image</label>
 
