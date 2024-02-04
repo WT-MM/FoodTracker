@@ -65,7 +65,7 @@ def find_food(food_name, sub_type = None):
                 print('Chose subtitle of \"{}\" arbitrarily'.format(x[3]['Name_subtitle']))
                 #set_reminder(x[2]['name'], get_time(x[])) 
                 #21, 22
-                return;
+                return 
 def names_of_everything():
     with open('FoodData.json', 'r') as file:
         data = json.load(file)

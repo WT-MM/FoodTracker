@@ -13,6 +13,7 @@ image = Image.open(requests.get(url, stream=True).raw)
 with open("ModifiedNames.txt", "r") as file:
     data = file.read()
     data = data.split("\n")
+    
 
 texts = [data]
 print(texts)

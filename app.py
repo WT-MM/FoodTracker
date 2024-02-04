@@ -1,4 +1,4 @@
-from flask import Flask, render_template, flash, request, redirect, jsonify
+from flask import Flask, render_template, flash, request, redirect, jsonify, send_from_directory
 from Backend import gemini, newReadData, emailscript
 import os
 import json
