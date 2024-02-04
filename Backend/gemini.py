@@ -14,8 +14,8 @@ def to_markdown(text):
 def name_foods(image):
     model = genai.GenerativeModel('gemini-pro-vision')
     img = PIL.Image.open(image)
-    response = model.generate_content(["List all of the foods in this image and their shelf life formatted as a python dictionary where the food is the key and the expiration date is the value.", img], stream=True)
+    response = model.generate_content(["List all of the foods in this image and their shelf life formatted as a python dictionary where the keys are the food names and the keys are the minimum shelf lives in days", img], stream=True)
     response.resolve()
     print(response.text)
 
-name_foods('Images/fridge.png')
+#name_foods('Images/fridge.png')

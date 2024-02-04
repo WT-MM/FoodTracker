@@ -1,89 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cool Beans</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      transition: background-color 0.3s;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Beans</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-    .container {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s;
-    }
+        h1 {
+            font-size: 3em;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
 
-    h1 {
-      text-align: center;
-      color: #3498db; /* Blue color for "Cool Beans" */
-    }
+        #upload-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    form {
-      display: flex;
-      flex-direction: column;
-    }
+        input[type="file"] {
+            display: none;
+        }
 
-    label {
-      margin-bottom: 8px;
-    }
+        .custom-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            cursor: pointer;
+            border: none;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
 
-    input {
-      padding: 10px;
-      margin-bottom: 16px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      background-color: #3498db;
-      color: #fff;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: #2980b9;
-    }
-
-    .dark-mode-toggle {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #3498db;
-      color: #fff;
-      padding: 10px;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    /* Dark Mode Styles */
-    body.dark-mode {
-      background-color: #333;
-      color: #fff;
-    }
-
-    .container.dark-mode-container {
-      background-color: #444;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-  </style>
+        .processing-notification {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #3498db;
+        }
+    </style>
 </head>
 <body>
 
@@ -96,19 +62,43 @@
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
 
-      <button type="submit">Sign In</button>
-      <p>Don't have an account? <a href="#">Create Account</a></p>
-    </form>
-  </div>
+        <!-- Custom-styled button -->
+        <label for="fileInput" class="custom-button">Upload Photo</label>
+
+        <!-- Processing notification -->
+        <p id="processingNotification" class="processing-notification">Processing...</p>
+    </div>
 
   <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</div>
 
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-      document.querySelector('.container').classList.toggle('dark-mode-container');
-    }
-  </script>
+    <script>
+        // Your file upload logic here
+        const fileInput = document.getElementById('fileInput');
+        const processingNotification = document.getElementById('processingNotification');
 
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+
+            processingNotification.style.display = 'block';
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the server
+                console.log(data);
+                processingNotification.style.display = 'none';
+            })
+            .catch(error => {
+                // Handle any errors
+                console.error(error);
+                processingNotification.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
