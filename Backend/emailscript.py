@@ -14,7 +14,7 @@ def days_from(spec_date):
 
 async def send_email(subject, food, to_email, date):
     # Create the MIME object
-    await asyncio.sleep(10)
+    await asyncio.sleep(3)
     smtp_server = "smtp.gmail.com"
     smtp_port = 465
     smtp_username = "devfest2024@gmail.com"
