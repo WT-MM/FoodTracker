@@ -5,13 +5,18 @@ import json
 
 app =  Flask(__name__)
 
+user = ""
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 @app.route('/dashboard')
 def dashboard():
-    return render_template('home.html')
+    with open("userData.json", "r") as file:
+        data = json.load(file)
+        user_data = data[user]
+    return render_template('home.html', foodData=user_data)
 
 @app.route('/upload', methods=['POST'])
 def upload():
@@ -28,12 +33,13 @@ def upload():
 
 @app.route('/sign-in', methods=['POST'])
 def login():
+    global user
     if request.method == 'POST':
         # Get the account information from the request
         username = request.form['username']
         password = request.form['password']
 
-        print(username, password)
+        user = username
 
         # Read the account information from the JSON file
         with open('accounts.json', 'r') as file:
@@ -53,6 +59,7 @@ def create_account_page():
 
 @app.route('/create-account', methods=['POST'])
 def create_account():
+    global user
     if request.method == 'POST':
         # Get the account information from the request
         username = request.form['username']
@@ -64,6 +71,8 @@ def create_account():
             'username': username,
             'password': password
         }
+
+        user = username
 
          # Write the account information to a JSON file
         with open('accounts.json', 'a') as file:
