@@ -71,6 +71,31 @@
       padding: 10px 0;
     }
 
+    #recipeList {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      font-weight:500;
+      color: #4CAF50;
+    }
+
+    .recipe{
+      list-style-type:none;
+      text-align:center;
+      text-align: center; /* Center text for direct text children */
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      width:auto;
+    }
+
+    .recipe > * {
+      flex: 1; /* Ensures that all children take up equal space and are centered */
+      display: flex;
+      justify-content: center; /* Center content of child elements */
+      text-align: center; /* Specifically center-align text for all child elements */
+    }
+
     .remove-button {
       background-color: #e74c3c;
       color: #fff;
@@ -181,6 +206,10 @@
     <div id="imagePreview"></div>
 
     <ul id="itemList"></ul>
+    <label id="getRecipesButton" class="upload-btn" onclick="getRecipe()" style="margin-top: 20px;font-size:x-small;background-color:#207424">Get Recipes</label>
+    <div></div>
+    <ul id="recipeList"></ul>
+
 
     <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</div>
   </div>
@@ -224,6 +253,14 @@
       }).then(response => response.json())
           .then(data => {
             console.log(data.recipes);
+            recipeList = document.getElementById('recipeList');
+            recipeList.innerHTML = 'Here are some recipes you could try!';
+            data.recipes.forEach(recipe => {
+              const recipeItem = document.createElement('li');
+              recipeItem.className = 'recipe';
+              recipeItem.textContent = recipe;
+              recipeList.appendChild(recipeItem);
+            });
           })
           .catch(error => console.error('Error:', error));
 
