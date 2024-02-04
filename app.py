@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash, request, redirect, jsonify
-from Backend import gemini
+from Backend import gemini, newReadData
 
 
 app =  Flask(__name__)
@@ -14,8 +14,11 @@ def upload():
         file = request.files['file']
         file.save('uploads/' + file.filename)
         foods = gemini.name_foods('uploads/' + file.filename)
-        print(foods)
-        return jsonify({'message': 'File uploaded successfully'})
+        retData = {}
+        for food in foods:
+            retData[food] = newReadData.get_min_fridge_expiration_time_in_days(food)
+        
+        return jsonify({'message': 'File uploaded successfully', 'foodData': retData})
     
 
 
