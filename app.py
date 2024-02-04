@@ -2,6 +2,7 @@ from flask import Flask, render_template, flash, request, redirect, jsonify
 from Backend import gemini, newReadData, emailscript
 import os
 import json
+import asyncio
 
 
 
