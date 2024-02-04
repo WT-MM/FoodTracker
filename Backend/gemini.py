@@ -21,6 +21,4 @@ def name_foods(image):
     img = PIL.Image.open(image)
     response = model.generate_content(["Return all of the foods in this image in a single string separated by commas that are also in the following list: " + data, img], stream=True)
     response.resolve()
-    return response.text.split(", ")
-
-#name_foods('Images/fridge.png')
+    print(response.text)
