@@ -15,8 +15,9 @@ def index():
 def dashboard():
     with open("userData.json", "r") as file:
         data = json.load(file)
-        user_data = data[user]
-    return render_template('home.html', foodData=user_data)
+        #user_data = data[user]
+    #return render_template('home.html', foodData=user_data)
+    return render_template('home.html', foodData=[{'name': "cow", 'date':"12-23-23"}])
 
 @app.route('/upload', methods=['POST'])
 def upload():
@@ -28,7 +29,8 @@ def upload():
         for food in foods:
             retData[food] = newReadData.get_min_fridge_expiration_time_in_days(food)
         
-        return jsonify({'message': 'File uploaded successfully', 'foodData': retData})
+        foods = {"Apple" : "12-23-23"}
+        return jsonify({'message': 'File uploaded successfully', 'foodData': [{'name': name, 'date': retData[name]} for name in retData.keys()]})
     
 
 @app.route('/sign-in', methods=['POST'])

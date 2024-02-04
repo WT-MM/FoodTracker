@@ -178,15 +178,27 @@
 
     <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</div>
   </div>
+
   <script>
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
       document.querySelector('.dashboard').classList.toggle('dark-mode-container');
     }
 
+        // Parse the JSON string into a JavaScript object
+    const foodData = JSON.parse('{{ foodData | tojson | safe }}');
+
+    // Now you can use foodData in your JavaScript code
+    // For example, you can iterate over the list and log each item
+    console.log(foodData);
+    foodData.sort((a, b) => new Date(a.expiration) - new Date(b.expiration));
+    foodData.forEach(item => addItem(item.name, item.date));
+
     function removeItem(item) {
       item.remove();
     }
+
+    
 
     function calculateDateColor(date) {
       const today = new Date();
