@@ -1,4 +1,5 @@
-from flask import Flask, render_template, flash, request, redirect, jsonify
+import os
+from flask import Flask, render_template, flash, request, redirect, jsonify, send_from_directory
 from Backend import gemini, newReadData#, emailscript
 import json
 
@@ -9,6 +10,11 @@ user = ""
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.png')
 
 @app.route('/dashboard')
 def dashboard():
