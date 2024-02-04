@@ -17,6 +17,13 @@
       transition: background-color 0.3s;
     }
 
+    .processing-notification {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2em;
+            /*color: #3498db;*/
+        }
+
     .dashboard {
       background-color: #fff;
       padding: 20px;
@@ -24,6 +31,7 @@
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       transition: box-shadow 0.3s;
       text-align: center;
+      height:fit-content;
     }
 
     h1 {
@@ -165,6 +173,8 @@
         const imageInput = document.getElementById('imageUpload');
         imageInput.addEventListener('change', handleImageSelection);
       });
+
+
     
       function handleImageSelection(event) {
         const selectedImage = event.target.files[0];
@@ -178,9 +188,12 @@
           alert('Please select an image before uploading.');
           return;
         }
-    
+        var processingNotification = document.getElementById('processingNotification');
+
         const formData = new FormData();
         formData.append('file', selectedImage);
+        processingNotification.style.display = 'block';
+
     
         fetch('/upload', {
           method: 'POST',
@@ -189,6 +202,7 @@
           .then(response => response.json())
           .then(data => {
             // Handle the response from the backend
+            processingNotification.style.display = 'none';
             console.log(data.foodData);
             itemLists = document.getElementById('itemList');
             itemLists.innerHTML = '';
@@ -204,6 +218,9 @@
 <label for="imageUpload" class="upload-btn">Upload Image</label>
 
     <div id="imagePreview"></div>
+
+    <p id="processingNotification" class="processing-notification">Processing...</p>
+
 
     <ul id="itemList"></ul>
     <label id="getRecipesButton" class="upload-btn" onclick="getRecipe()" style="margin-top: 20px;font-size:x-small;background-color:#207424">Get Recipes</label>

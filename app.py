@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash, request, redirect, jsonify
-from Backend import gemini, newReadData, emailscript
+from Backend import gemini, newReadData#, emailscript
 import json
 
 app =  Flask(__name__)
@@ -16,7 +16,7 @@ def dashboard():
         data = json.load(file)
         #user_data = data[user]
     #return render_template('home.html', foodData=user_data)
-    return render_template('home.html', foodData=[{'name': "cow", 'date':"12-23-23"}])
+    return render_template('home.html', foodData=[])#foodData=[{'name': "cow", 'date':"12-23-23"}])
 
 @app.route('/upload', methods=['POST'])
 def upload():
@@ -31,7 +31,8 @@ def upload():
         
         #foods = {"Apple" : "12-23-23"}
         for food in foods:
-            send_email("EcoBean Expiration Alert", food['name'], user, food['date'])
+            #send_email("EcoBean Expiration Alert", food['name'], user, food['date'])
+            pass
         return jsonify({'message': 'File uploaded successfully', 'foodData': foods})
     
 
